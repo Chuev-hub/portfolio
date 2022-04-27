@@ -1,13 +1,23 @@
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import Home from './Components/Home'
+function App(){
+    return (
+     
+     
+    
+      <Router>
+         <div className="App">
+         <Switch>
+          <Route exact path="/" component={Home}/>
+          </Switch>
+          </div>
+      </Router>
 
-import './App.css';
-
-function App() {
-    return (<  >
-    <div className='d-flex justify-content-center'>
-         <input type={"text"} style = {{textAlign:"center", marginTop:"50px"}} value={"файна лох"}></input> 
-         </div>
-       </ >
+    
     );
-}
+  }
+    
+
 
 export default App;
