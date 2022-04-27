@@ -3,9 +3,8 @@ import './App.css';
 
 function App() {
     return ( < div className = "App" >
-        <
-        header className = "App-header" >
-        оиіааиіоиітвиьтівиаівиатвіит < /header> </div >
+        <header className = "App-header" >
+        оиіааиіоиітвиьтівиаівиатвіит </header> </div >
     );
 }
 
