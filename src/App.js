@@ -10,6 +10,9 @@ function App(){
          <div className="App">
          <Switch>
            <Route exact path="/portfolio" component={Home}/>
+           <Route exact path="/portfolio/h" >
+             <div>govno</div>
+           </Route>
           </Switch>
           </div>
       </Router>
