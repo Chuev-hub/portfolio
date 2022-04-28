@@ -9,8 +9,11 @@
         "@testing-library/user-event": "^13.5.0",
         "react": "^18.1.0",
         "react-dom": "^18.1.0",
+        "react-responsive": "^9.0.0-beta.6",
         "react-router-dom": "^5.2.0",
         "react-scripts": "5.0.1",
+        "react-typed": "^1.2.0",
+        "typed.js": "^2.0.12",
         "web-vitals": "^2.1.4"
     },
     "scripts": {

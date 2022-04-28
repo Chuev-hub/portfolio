@@ -4,6 +4,102 @@ body {
     color: white;
 }
 
+.main {
+    display: flex;
+}
+
+.name {
+    font-size: 8vw;
+    margin-top: 20vw;
+    margin-bottom: 0;
+}
+
+.title {
+    font-size: 3vw;
+    margin-left: 1vw;
+    color: #5cff72;
+}
+
+.title2 {
+    font-size: 2vw;
+    margin-left: 1vw;
+    color: #448cff;
+    text-align: end;
+}
+
+.title3 {
+    font-size: 2vw;
+    margin-left: 1vw;
+    color: #5cff72;
+    text-align: end;
+}
+
+.typed-cursor {
+    color: white;
+}
+
 code {
     font-family: Courier;
+}
+
+@media only screen and (min-width: 960px) {
+    /* styles for browsers larger than 960px; */
+}
+
+@media only screen and (min-width: 1440px) {
+    /* styles for browsers larger than 1440px; */
+}
+
+@media only screen and (min-width: 2000px) {
+    /* for sumo sized (mac) screens */
+}
+
+@media only screen and (max-width: 500px) {
+    .name {
+        font-size: 16vw;
+        margin-top: 20vw;
+        margin-bottom: 0;
+        width: 6ch;
+        line-height: normal;
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+    .typed-cursor {
+        font-size: 30px;
+        color: white;
+    }
+    .title {
+        font-size: 6vw;
+        margin-left: 1vw;
+        color: #5cff72;
+        width: 200px;
+        word-wrap: inherit;
+    }
+    .title2 {
+        font-size: 4vw;
+        margin-left: 1vw;
+        color: #448cff;
+    }
+    .title3 {
+        font-size: 5vw;
+        margin-left: 1vw;
+        color: #5cff72;
+    }
+}
+
+@media only screen and (device-width: 768px) {
+    /* default iPad screens */
+}
+
+
+/* different techniques for iPad screening */
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+    /* For portrait layouts only */
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+    /* For landscape layouts only */
 }
