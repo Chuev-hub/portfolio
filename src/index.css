@@ -54,7 +54,42 @@ code {
     /* for sumo sized (mac) screens */
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
+    .name {
+        font-size: 16vw;
+        margin-top: 20vw;
+        margin-bottom: 0;
+        width: 6ch;
+        line-height: normal;
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+    .typed-cursor {
+        font-size: 30px;
+        color: white;
+    }
+    .title {
+        font-size: 6vw;
+        margin-left: 1vw;
+        color: #5cff72;
+        width: 200px;
+        word-wrap: inherit;
+    }
+    .title2 {
+        font-size: 4vw;
+        margin-left: 1vw;
+        color: #448cff;
+    }
+    .title3 {
+        font-size: 5vw;
+        margin-left: 1vw;
+        color: #5cff72;
+    }
+}
+
+@media only screen and (max-device-width: 500px) {
     .name {
         font-size: 16vw;
         margin-top: 20vw;
