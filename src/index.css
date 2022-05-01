@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-family: Courier;
     color: white;
+    background-color: #0e151d;
 }
 
 .main {
@@ -40,22 +41,37 @@ body {
     color: #5cff72;
 }
 
+.bottomd {
+    margin-bottom: 20vw;
+}
+
 .typed-cursor {
     color: white;
     font-size: 2vw;
 }
 
 .codeProj {
-    font-size: 3vw;
+    font-size: 2.5vw;
     color: #ff0000;
-    margin-left: 1vw;
+    margin-left: 2vw;
     text-shadow: 0 0 0.1vw rgb(188, 2, 2), 0 0 1vw rgb(255, 99, 99);
 }
 
 .codeProj2 {
-    font-size: 3vw;
+    font-size: 2.5vw;
     color: #ff0000;
     margin-left: 7vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+.link {
+    color: #ffffff;
+    margin-left: 3vw;
+    margin-right: 1vw;
+    ;
 }
 
 code {
@@ -74,7 +90,7 @@ code {
     /* for sumo sized (mac) screens */
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
     .name {
         font-size: 18vw;
         margin-top: 20vw;
@@ -88,7 +104,7 @@ code {
         justify-content: left;
     }
     .greening2 {
-        width: 45vw;
+        width: 50vw;
         text-align: left;
         margin-left: 2vw;
     }
@@ -113,6 +129,23 @@ code {
     .title3 {
         font-size: 5vw;
         color: #5cff72;
+    }
+    .codeProj {
+        font-size: 5vw;
+        color: #ff0000;
+        margin-left: 2vw;
+        text-shadow: 0 0 0.1vw rgb(188, 2, 2), 0 0 1vw rgb(255, 99, 99);
+    }
+    .codeProj2 {
+        width: 58vw;
+        word-wrap: normal;
+        font-size: 5vw;
+        color: #ff0000;
+        margin-left: 7vw;
+        display: flex;
+        flex-direction: column;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
     }
 }
 
@@ -130,7 +163,7 @@ code {
         justify-content: left;
     }
     .greening2 {
-        width: 45vw;
+        width: 50vw;
         text-align: left;
         margin-left: 2vw;
     }
@@ -155,6 +188,23 @@ code {
     .title3 {
         font-size: 5vw;
         color: #5cff72;
+    }
+    .codeProj {
+        font-size: 5vw;
+        color: #ff0000;
+        margin-left: 2vw;
+        text-shadow: 0 0 0.1vw rgb(188, 2, 2), 0 0 1vw rgb(255, 99, 99);
+    }
+    .codeProj2 {
+        width: 58vw;
+        word-wrap: normal;
+        font-size: 5vw;
+        color: #ff0000;
+        margin-left: 7vw;
+        display: flex;
+        flex-direction: column;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
     }
 }
 

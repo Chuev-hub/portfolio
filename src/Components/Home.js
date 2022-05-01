@@ -29,15 +29,46 @@ function Home() {
                 <div>
                 </div>
           </div>
+          
+          
           <div className='d-flex flex-column' style={{marginTop:'10vw'}}> 
-                 <span className='codeProj'>&lt;projects&gt;</span>
-                 <span className='codeProj2'>&lt;div&gt;&lt;/div&gt;</span>
-                 <span className='codeProj2'>&lt;div&gt;&lt;/div&gt;</span>
-                 <span className='codeProj2'>&lt;div&gt;&lt;/div&gt;</span>
-                 <span className='codeProj2'>&lt;div&gt;&lt;/div&gt;</span>
-                 <span className='codeProj2'>&lt;div&gt;&lt;/div&gt;</span>
-                 <span className='codeProj2'>&lt;div&gt;&lt;/div&gt;</span>
-                 <span className='codeProj'>&lt;/projects&gt;</span>
+          <span className='codeProj'>&lt;projects&gt;</span>
+                      <div className ='codeProj2'>
+                      <span className=''>&lt;div class = &quot;ASP.NET+REACT&quot;&gt;</span>
+                      <Link className='link'>FilmsSite 10.2021</Link>
+                      <span className=''>&lt;/div&gt;</span>
+                      </div>
+                      <div className ='codeProj2'>
+                      <span className=''>&lt;div class = &quot;WPF&quot;&gt;</span>
+                      <Link className='link'>Steam 04.2021</Link>
+                      <span className=''>&lt;/div&gt;</span>
+                      </div>
+                      <div className ='codeProj2'>
+                      <span className=''>&lt;div class = &quot;WPF&quot;&gt;</span>
+                      <Link className='link'>Solar 03.2021</Link>
+                      <span className=''>&lt;/div&gt;</span>
+                      </div>
+                      <div className ='codeProj2'>
+                      <span className=''>&lt;div class = &quot;WPF&quot;&gt;</span>
+                      <Link className='link'>Cars3D 11.2020</Link>
+                      <span className=''>&lt;/div&gt;</span>
+                      </div>
+                      <div className ='codeProj2'>
+                      <span className=''>&lt;div class = &quot;WinForms&quot;&gt;</span>
+                      <Link className='link'>Phonebook 10.2020</Link>
+                      <span className=''>&lt;/div&gt;</span>
+                      </div>
+                      <div className ='codeProj2'>
+                      <span className=''>&lt;div class = &quot;C#&quot;&gt;</span>
+                      <Link className='link'>FileManager 9,2020</Link>
+                      <span className=''>&lt;/div&gt;</span>
+                      </div>
+                      <div className ='codeProj2'>
+                      <span className=''>&lt;div class = &quot;Tester 03,2020&quot;&gt;</span>
+                      <Link className='link'>C++Console</Link>
+                      <span className=''>&lt;/div&gt;</span>
+                      </div>
+                 <span className='codeProj bottomd'>&lt;/projects&gt;</span>
           </div>
           </div>
       </div>
