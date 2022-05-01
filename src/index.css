@@ -12,11 +12,13 @@ body {
     font-size: 8vw;
     margin-top: 20vw;
     margin-bottom: 0;
+    text-shadow: 0 0 0.2vw #fff, 0 0 1vw rgb(99, 255, 203);
 }
 
 .title {
     font-size: 3vw;
     margin-right: 1vw;
+    text-shadow: 0 0 0.1vw rgb(2, 188, 64), 0 0 0.5vw rgb(99, 255, 203);
     color: #5cff72;
 }
 
@@ -41,6 +43,19 @@ body {
 .typed-cursor {
     color: white;
     font-size: 2vw;
+}
+
+.codeProj {
+    font-size: 3vw;
+    color: #ff0000;
+    margin-left: 1vw;
+    text-shadow: 0 0 0.1vw rgb(188, 2, 2), 0 0 1vw rgb(255, 99, 99);
+}
+
+.codeProj2 {
+    font-size: 3vw;
+    color: #ff0000;
+    margin-left: 7vw;
 }
 
 code {
@@ -103,11 +118,21 @@ code {
 
 @media only screen and (max-device-width: 500px) {
     .name {
-        font-size: 16vw;
+        font-size: 18vw;
         margin-top: 20vw;
         margin-bottom: 0;
         width: 6ch;
         line-height: normal;
+    }
+    .greening {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+    .greening2 {
+        width: 45vw;
+        text-align: left;
+        margin-left: 2vw;
     }
     .main {
         display: flex;
@@ -120,9 +145,8 @@ code {
     .title {
         font-size: 6vw;
         margin-left: 1vw;
+        margin-right: 1vw;
         color: #5cff72;
-        width: 200px;
-        word-wrap: inherit;
     }
     .title2 {
         font-size: 4vw;
@@ -130,7 +154,6 @@ code {
     }
     .title3 {
         font-size: 5vw;
-        margin-left: 1vw;
         color: #5cff72;
     }
 }

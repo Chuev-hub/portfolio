@@ -11,7 +11,7 @@ function Home() {
      
      <div className="d-flex justify-content-center">
         <div className="d-flex  flex-column">
-          <div><p className="name" >CHUEV ILYA</p>
+          <div><p className="name glow" >CHUEV ILYA</p>
           </div>
           <div className="greening">
           <span class="title">Full-stack</span>  
@@ -28,7 +28,18 @@ function Home() {
                </h1>
                 <div>
                 </div>
-          </div></div>
+          </div>
+          <div className='d-flex flex-column' style={{marginTop:'10vw'}}> 
+                 <span className='codeProj'>&lt;projects&gt;</span>
+                 <span className='codeProj2'>&lt;div&gt;&lt;/div&gt;</span>
+                 <span className='codeProj2'>&lt;div&gt;&lt;/div&gt;</span>
+                 <span className='codeProj2'>&lt;div&gt;&lt;/div&gt;</span>
+                 <span className='codeProj2'>&lt;div&gt;&lt;/div&gt;</span>
+                 <span className='codeProj2'>&lt;div&gt;&lt;/div&gt;</span>
+                 <span className='codeProj2'>&lt;div&gt;&lt;/div&gt;</span>
+                 <span className='codeProj'>&lt;/projects&gt;</span>
+          </div>
+          </div>
       </div>
     </div>
   );
