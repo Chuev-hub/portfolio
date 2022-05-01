@@ -16,26 +16,31 @@ body {
 
 .title {
     font-size: 3vw;
-    margin-left: 1vw;
+    margin-right: 1vw;
     color: #5cff72;
+}
+
+.greening {
+    margin-left: 1vw;
+}
+
+.greening2>span>span {
+    margin-left: 1vw;
 }
 
 .title2 {
     font-size: 2vw;
-    margin-left: 1vw;
     color: #448cff;
-    text-align: end;
 }
 
 .title3 {
     font-size: 2vw;
-    margin-left: 1vw;
     color: #5cff72;
-    text-align: end;
 }
 
 .typed-cursor {
     color: white;
+    font-size: 2vw;
 }
 
 code {
@@ -54,13 +59,23 @@ code {
     /* for sumo sized (mac) screens */
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
     .name {
-        font-size: 16vw;
+        font-size: 18vw;
         margin-top: 20vw;
         margin-bottom: 0;
         width: 6ch;
         line-height: normal;
+    }
+    .greening {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+    .greening2 {
+        width: 45vw;
+        text-align: left;
+        margin-left: 2vw;
     }
     .main {
         display: flex;
@@ -73,18 +88,15 @@ code {
     .title {
         font-size: 6vw;
         margin-left: 1vw;
+        margin-right: 1vw;
         color: #5cff72;
-        width: 200px;
-        word-wrap: inherit;
     }
     .title2 {
         font-size: 4vw;
-        margin-left: 1vw;
         color: #448cff;
     }
     .title3 {
         font-size: 5vw;
-        margin-left: 1vw;
         color: #5cff72;
     }
 }
@@ -114,7 +126,6 @@ code {
     }
     .title2 {
         font-size: 4vw;
-        margin-left: 1vw;
         color: #448cff;
     }
     .title3 {
