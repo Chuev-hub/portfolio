@@ -118,7 +118,7 @@ code {
 
 @media only screen and (max-device-width: 500px) {
     .name {
-        font-size: 24vw;
+        font-size: 18vw;
         margin-top: 20vw;
         margin-bottom: 0;
         width: 6ch;
