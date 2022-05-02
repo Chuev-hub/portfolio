@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { HashRouter as Router, Route, Switch } from 'react-router-dom'
 import Home from './Components/Home'
 function App(){
     return (
@@ -9,8 +9,8 @@ function App(){
       <Router>
          <div className="App">
          <Switch>
-           <Route exact path="/portfolio" component={Home}/>
-           <Route exact path="/portfolio/h" >
+           <Route exact path="/" component={Home}/>
+           <Route   path="/h" >
              <div>govno</div>
            </Route>
           </Switch>

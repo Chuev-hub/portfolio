@@ -31,7 +31,7 @@ function Home() {
           </div>
           
           
-          <div className='d-flex flex-column' style={{marginTop:'10vw'}}> 
+          <div className='d-flex flex-column proj' > 
           <span className='codeProj'>&lt;projects&gt;</span>
                       <div className ='codeProj2'>
                       <span className=''>&lt;div class = &quot;ASP.NET+REACT&quot;&gt;</span>
@@ -64,8 +64,8 @@ function Home() {
                       <span className=''>&lt;/div&gt;</span>
                       </div>
                       <div className ='codeProj2'>
-                      <span className=''>&lt;div class = &quot;Tester 03,2020&quot;&gt;</span>
-                      <Link className='link'>C++Console</Link>
+                      <span className=''>&lt;div class = &quot;C++Console&quot;&gt;</span>
+                      <Link className='link'>Tester 03,2020</Link>
                       <span className=''>&lt;/div&gt;</span>
                       </div>
                  <span className='codeProj bottomd'>&lt;/projects&gt;</span>
