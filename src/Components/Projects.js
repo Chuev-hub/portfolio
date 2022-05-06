@@ -52,7 +52,7 @@ function Projects() {
                      <Card technology="Unity"
                    title="Game Platformer"
                    options="The platformer is written in a team on the Unity using C# scripts and is posted on Google Play Market."
-                   date="03.2020"
+                   date="08.2020"
                    link="/project/2"
                    ></Card>
                   <Card technology="C++ ConsoleApp"

@@ -58,6 +58,9 @@ code {
     .mdiv {
         margin-top: 35%;
     }
+    body {
+        background-attachment: scroll;
+    }
 }
 
 @media only screen and (max-width: 900px) {}
