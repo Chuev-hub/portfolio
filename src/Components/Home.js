@@ -3,13 +3,21 @@ import { Link } from 'react-router-dom';
 import '../index.css'
 import { useMediaQuery } from 'react-responsive'
 import Typed from 'react-typed';
+import NavBar from './NavBar';
 function Home() {
   
   return (
     <div >
+    
+    <div className="d-flex justify-content-center">
+    <div className="d-flex  flex-column" style={{marginTop:"15%"}}>
+      <div className='title1'>Chuev Ilya</div>
+      <div className='title2'>Full-stack developer</div>
+      <div className='title3'>.NET + React</div>
+    </div>
+    </div>
      
-     
-     <div className="d-flex justify-content-center">
+     {/* <div className="d-flex justify-content-center">
         <div className="d-flex  flex-column">
           <div><p className="name glow" >CHUEV ILYA</p>
           </div>
@@ -71,7 +79,7 @@ function Home() {
                  <span className='codeProj bottomd'>&lt;/projects&gt;</span>
           </div>
           </div>
-      </div>
+      </div> */}
     </div>
   );
 }

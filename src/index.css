@@ -1,83 +1,21 @@
 body {
     margin: 0;
-    font-family: Courier;
-    color: white;
-    background-color: #0e151d;
+    color: aliceblue;
+    background: url('/src/img/imgonline-com-ua-Blur-dptonyNhWcdyjdn2\ \(1\).jpg') no-repeat center fixed;
 }
 
-.main {
-    display: flex;
-}
-
-.name {
-    font-size: 8vw;
-    margin-top: 20vw;
-    margin-bottom: 0;
-    text-shadow: 0 0 0.2vw #fff, 0 0 1vw rgb(99, 255, 203);
-}
-
-.title {
-    font-size: 3vw;
-    margin-right: 1vw;
-    text-shadow: 0 0 0.1vw rgb(2, 188, 64), 0 0 0.5vw rgb(44, 255, 37);
-    color: #5cff72;
-}
-
-.greening {
-    margin-left: 1vw;
-}
-
-.greening2>span>span {
-    margin-left: 1vw;
+.title1 {
+    font-size: 50px;
 }
 
 .title2 {
-    font-size: 2vw;
-    text-shadow: 0 0 0.1vw rgb(0, 135, 193), 0 0 0.5vw rgb(47, 137, 255);
-    color: #448cff;
+    font-size: 25px;
+    color: rgb(222, 222, 222);
 }
 
 .title3 {
-    font-size: 2vw;
-    text-shadow: 0 0 0.1vw rgb(2, 188, 64), 0 0 0.5vw rgb(0, 255, 98);
-    color: #5cff72;
-}
-
-.bottomd {
-    margin-bottom: 20vw;
-}
-
-.typed-cursor {
-    color: white;
-    font-size: 2vw;
-}
-
-.codeProj {
-    font-size: 2.5vw;
-    color: #ff0000;
-    margin-left: 2vw;
-    text-shadow: 0 0 0.1vw rgb(188, 2, 2), 0 0 0.5vw rgb(255, 37, 37);
-}
-
-.codeProj2 {
-    font-size: 2.5vw;
-    color: #448cff;
-    margin-left: 7vw;
-    display: flex;
-    flex-direction: column;
-    margin-top: 1vw;
-    margin-bottom: 1vw;
-}
-
-.proj {
-    margin-top: 15vw;
-}
-
-.link {
-    color: #c7c7c7;
-    margin-left: 3vw;
-    margin-right: 1vw;
-    ;
+    font-size: 20px;
+    color: rgb(222, 222, 222);
 }
 
 code {
@@ -96,139 +34,11 @@ code {
     /* for sumo sized (mac) screens */
 }
 
-@media only screen and (max-width: 600px) {
-    .name {
-        font-size: 18vw;
-        margin-top: 20vw;
-        margin-bottom: 0;
-        width: 6ch;
-        line-height: normal;
-    }
-    .proj {
-        margin-top: 30vw;
-    }
-    .greening {
-        display: flex;
-        flex-direction: column;
-        justify-content: left;
-    }
-    .greening2 {
-        width: 50vw;
-        text-align: left;
-        margin-left: 2vw;
-    }
-    .main {
-        display: flex;
-        flex-direction: column;
-    }
-    .typed-cursor {
-        font-size: 30px;
-        color: white;
-    }
-    .title {
-        font-size: 6vw;
-        margin-left: 1vw;
-        margin-right: 1vw;
-        color: #5cff72;
-    }
-    .title2 {
-        font-size: 4vw;
-        color: #448cff;
-    }
-    .title3 {
-        font-size: 5vw;
-        color: #5cff72;
-    }
-    .codeProj {
-        font-size: 5vw;
-        color: #ff0000;
-        margin-left: 2vw;
-        text-shadow: 0 0 0.1vw rgb(188, 2, 2), 0 0 1vw rgb(255, 99, 99);
-    }
-    .codeProj2 {
-        width: 58vw;
-        word-wrap: normal;
-        font-size: 5vw;
-        margin-left: 7vw;
-        display: flex;
-        flex-direction: column;
-        margin-top: 1vw;
-        margin-bottom: 1vw;
-    }
-}
+@media only screen and (max-width: 600px) {}
 
-@media only screen and (max-device-width: 500px) {
-    .name {
-        font-size: 18vw;
-        margin-top: 20vw;
-        margin-bottom: 0;
-        width: 6ch;
-        line-height: normal;
-    }
-    .proj {
-        margin-top: 30vw;
-    }
-    .greening {
-        display: flex;
-        flex-direction: column;
-        justify-content: left;
-    }
-    .greening2 {
-        width: 50vw;
-        text-align: left;
-        margin-left: 2vw;
-    }
-    .main {
-        display: flex;
-        flex-direction: column;
-    }
-    .typed-cursor {
-        font-size: 30px;
-        color: white;
-    }
-    .title {
-        font-size: 6vw;
-        margin-left: 1vw;
-        margin-right: 1vw;
-        color: #5cff72;
-    }
-    .title2 {
-        font-size: 4vw;
-        color: #448cff;
-    }
-    .title3 {
-        font-size: 5vw;
-        color: #5cff72;
-    }
-    .codeProj {
-        font-size: 5vw;
-        color: #ff0000;
-        margin-left: 2vw;
-        text-shadow: 0 0 0.1vw rgb(188, 2, 2), 0 0 1vw rgb(255, 99, 99);
-    }
-    .codeProj2 {
-        width: 58vw;
-        word-wrap: normal;
-        font-size: 5vw;
-        margin-left: 7vw;
-        display: flex;
-        flex-direction: column;
-        margin-top: 1vw;
-        margin-bottom: 1vw;
-    }
-}
+@media only screen and (max-device-width: 500px) {}
 
-@media only screen and (max-width: 900px) {
-    .name {
-        font-size: 10vw;
-        margin-top: 30vw;
-        margin-bottom: 0;
-        line-height: normal;
-    }
-    .proj {
-        margin-top: 30vw;
-    }
-}
+@media only screen and (max-width: 900px) {}
 
 @media only screen and (device-width: 768px) {
     /* default iPad screens */
