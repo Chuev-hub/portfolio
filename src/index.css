@@ -59,7 +59,10 @@ code {
         margin-top: 35%;
     }
     body {
-        background-attachment: scroll;
+        -webkit-background-size: auto;
+        -moz-background-size: auto;
+        -o-background-size: auto;
+        background-size: auto;
     }
 }
 
