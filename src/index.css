@@ -25,6 +25,10 @@ body {
     color: rgb(222, 222, 222);
 }
 
+.mdiv {
+    margin-top: 15%;
+}
+
 code {
     font-family: Courier;
 }
@@ -41,9 +45,17 @@ code {
     /* for sumo sized (mac) screens */
 }
 
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+    .mdiv {
+        margin-top: 30%;
+    }
+}
 
-@media only screen and (max-device-width: 500px) {}
+@media only screen and (max-device-width: 600px) {
+    .mdiv {
+        margin-top: 35%;
+    }
+}
 
 @media only screen and (max-width: 900px) {}
 

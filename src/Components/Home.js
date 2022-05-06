@@ -10,7 +10,7 @@ function Home() {
     <div >
     
     <div className="d-flex justify-content-center">
-    <div className="d-flex  flex-column" style={{marginTop:"15%"}}>
+    <div className="d-flex  flex-column mdiv">
       <div className='title1'>Chuev Ilya</div>
       <div className='title2'>Full-stack developer</div>
       <div className='title3'>.NET + React</div>
