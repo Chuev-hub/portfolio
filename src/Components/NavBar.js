@@ -11,10 +11,10 @@ return(
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-        <Link className="nav-link active" to="/">Projects</Link>
+        <Link className="nav-link active" to="/projects">Projects</Link>
         </li>
         <li className="nav-item">
-        <Link className="nav-link " to="/">Contact</Link>
+        <Link className="nav-link " to="/contact">Contact</Link>
         </li>
       
       </ul>

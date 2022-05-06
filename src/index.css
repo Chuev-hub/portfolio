@@ -13,16 +13,19 @@ body {
 
 .title1 {
     font-size: 50px;
+    text-shadow: 0 0 1px rgb(0, 0, 0), 0 0 4px rgb(0, 0, 0);
 }
 
 .title2 {
     font-size: 25px;
     color: rgb(222, 222, 222);
+    text-shadow: 0 0 1px rgb(0, 0, 0), 0 0 4px rgb(0, 0, 0);
 }
 
 .title3 {
     font-size: 20px;
     color: rgb(222, 222, 222);
+    text-shadow: 0 0 1px rgb(0, 0, 0), 0 0 4px rgb(0, 0, 0);
 }
 
 .mdiv {
