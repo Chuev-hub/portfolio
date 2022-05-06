@@ -58,12 +58,6 @@ code {
     .mdiv {
         margin-top: 35%;
     }
-    body {
-        -webkit-background-size: auto;
-        -moz-background-size: auto;
-        -o-background-size: auto;
-        background-size: auto;
-    }
 }
 
 @media only screen and (max-width: 900px) {}
