@@ -1,7 +1,14 @@
 body {
     margin: 0;
-    color: aliceblue;
-    background: url('/src/img/imgonline-com-ua-Blur-dptonyNhWcdyjdn2\ \(1\).jpg') no-repeat center center fixed;
+    color: rgb(136, 199, 254);
+    background-image: url(/src/img/imgonline-com-ua-Blur-dptonyNhWcdyjdn2\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .title1 {
