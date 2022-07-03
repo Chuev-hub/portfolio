@@ -67,7 +67,7 @@ code {
         margin-top: 35%;
     }
     body {
-        background-position-x: 50px;
+        background-position-x: left;
         background-position-y: center;
     }
 }
