@@ -6,7 +6,10 @@ function Projects() {
   
     return (
         <div>
-            <div className="d-flex justify-content-center">
+             <div className="d-flex justify-content-center">
+          <div className="" style={{textAlign:"center",margin:"20px",fontSize:"25px",fontWeight:"bold"}}>My projects</div></div>
+          <div className="d-flex justify-content-center">
+           
                 <div className='cards' > 
                 {mas.map(x => (
          <Card technology= {x.technology}
