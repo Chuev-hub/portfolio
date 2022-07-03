@@ -16,7 +16,7 @@ function Projects() {
          title= {x.title}
          options= {x.shortMessage}
          date= {x.date}
-         link={"/project/"+ (x.id+1)}
+         link={"/project/"+ (x.id)}
          />
       ))}
                  
