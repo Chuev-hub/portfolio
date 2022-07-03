@@ -1,0 +1,99 @@
+{
+    "mas": [{
+            "title": "Films Site",
+            "id": 7,
+            "technology": "ASP.NET, REACT",
+            "shortMessage": "Website for creating your own collections of films.",
+            "longMessage": "This is a service for creating selections of movies, viewing their information, and searching for them. There is registration, and login to a personal account, which is implemented by using JWT authentication. There is also an administrator account that has access to do CRUD operations with the movies.",
+            "date": "10.2021",
+            "url": ["id-8.1.png", "id-8.3.png", "id-8.4.png", "id-8.5.png"],
+            "source": "https://github.com/Chuev-hub/Films",
+            "publishLink": "",
+            "stack": "ASP.NET Core MVC Web Application, REST Api, SQL Server, 3tier, EF6, React, JWT"
+        },
+        {
+            "title": "Steam",
+            "id": 6,
+            "technology": "WPF",
+            "shortMessage": "A copy of the platform, using official Steam api.",
+            "longMessage": "Command project, a copy of the Steam platform, a desktop application. Data at the first launch is collected from the API of the original Steam and fills the database. There is registration and login, the ability to add friends, and to change information about yourself in your personal account. On the main page you can see the games that you can view, add to cart or wishlist. Bought games are in the library, where you can see information about them, or you can do it on the page in the store.",
+            "date": "04.2021",
+            "url": ["id-7.1.png", "id-7.2.png", "id-7.3.png", "id-7.4.png"],
+            "source": "https://github.com/Chuev-hub/Steam",
+            "publishLink": "",
+            "stack": "C# WPF Application, MVVM, SQL Server, 3tier, Steam Api, EF6"
+        },
+        {
+            "title": "Solar guitars",
+            "id": 5,
+            "technology": "WPF",
+            "shortMessage": "Offline guitar shop, a copy of the Solar Guitars website.",
+            "longMessage": "Offline \"Internet store\", desktop application. It contains products (guitars) which are stored in a database. Has registration and login, personal account, shopping cart, order list, the ability to order, view the guitars, as in a usual online store. It's copy of existing site.",
+            "date": "03.2021",
+            "url": ["id-6.1.png", "id-6.2.png", "id-6.3.png"],
+            "source": "https://github.com/Chuev-hub/Solar",
+            "publishLink": "",
+            "stack": "C# WPF Application, MVVM, SQL Server, 3tier, EF6"
+        },
+        {
+            "title": "Cars 3D",
+            "id": 4,
+            "technology": "WPF",
+            "shortMessage": "CRUD operations with collection of cars, that are presented in 3D.",
+            "longMessage": "A very interesting WPF application that allows you to perform CRUD operations with cars, but they are presented as 3D models. The cars also have different characteristics. MVVM is used. There is a dark and light theme, two languages. There is also an alphabetical sorting of the collection. The data are stored in a gson file.",
+            "date": "11.2020",
+            "url": ["id-5.1.png", "id-5.2.png", "id-5.3.png"],
+            "source": "https://github.com/Chuev-hub/Cars3D",
+            "publishLink": "",
+            "stack": "C# WPF Application, MVVM"
+        },
+        {
+            "title": "Phonebook",
+            "id": 3,
+            "technology": "WinForms",
+            "shortMessage": "Multi-window simple application to store contacts.",
+            "longMessage": "This application allows us to perform CRUD operations on a collection of people (contacts). It is possible to add pictures for each contact and enter up to 5 phone numbers. The application is multi-window. The data are stored in a text file.",
+            "date": "10.2020",
+            "url": ["id-4.1.png", "id-4.2.png"],
+            "source": "https://github.com/Chuev-hub/winformPhonebook",
+            "publishLink": "",
+            "stack": "C# WinForm Application"
+        },
+        {
+            "title": "File Manager",
+            "id": 2,
+            "technology": "C# ConsoleApp",
+            "shortMessage": "This is a file manager, analog of the Total Commander.",
+            "longMessage": "The File Manager is a console application written using the C # language. It has two options, you can use console commands or arrows between the two panels.  It gives you the ability to delete, move, copy files and folders, view the content of text files and rename them. You can navigate through the disk hierarchy performing actions over files and folders.  Analogue of the Total Commander. The data are stored in a text file.",
+            "date": "09.2020",
+            "url": ["id-3.1.png", "id-3.2.png"],
+            "source": "https://github.com/Chuev-hub/C-console",
+            "publishLink": "",
+            "stack": "C# Console Application"
+        },
+        {
+            "title": "Game Platformer",
+            "id": 1,
+            "technology": "C# Unity",
+            "shortMessage": "2d Game-platformer for android, my first team project.",
+            "longMessage": "A game which is made by two in a team, and launched on the Play Market platform, was the first big project that I created. The game has 15 levels, lots of characters, weapons, and enemies.",
+            "date": "08.2020",
+            "url": ["id-2.1.png", "id-2.2.png"],
+            "source": "https://drive.google.com/file/d/1yUoLveB8ZeaGUIZAy-N-9RP3wlr5OECw/view?usp=sharing",
+            "publishLink": "https://play.google.com/store/apps/details?id=com.ZutixGames.RemBoyAcrossthecentury",
+            "stack": "C# Script, Unity"
+        },
+        {
+            "title": "Tester",
+            "id": 0,
+            "technology": "C++ Console",
+            "shortMessage": "Console application with authentication, which has tests.",
+            "longMessage": "A simple console program that has tests divided into categories. It has registration and login with validation. After passing the test, you can find out the result - the number of points and the time it took to pass. Statistics is also present in the menu.  Used libraries STL. Controls - arrows, also has a dark theme.  The data are stored in a text files.",
+            "date": "03.2020",
+            "url": ["id-1.1.png", "id-1.2.png", "id-1.3.png", "id-1.4.png"],
+            "source": "https://github.com/Chuev-hub/C-console",
+            "publishLink": "",
+            "stack": "C++ OOP, STL lib"
+        }
+    ]
+}

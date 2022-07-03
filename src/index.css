@@ -11,6 +11,14 @@ body {
     background-size: cover;
 }
 
+.cards {
+    display: flex;
+    width: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+}
+
 .title1 {
     font-size: 50px;
     text-shadow: 0 0 1px rgb(0, 0, 0), 0 0 4px rgb(0, 0, 0);
