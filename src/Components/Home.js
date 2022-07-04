@@ -20,7 +20,7 @@ textAlign:"center"}}>
      
       <div className='title1'>Chuev Ilya</div>
       <div className='title2'>Full-stack developer</div>
-      <div className='title3'>.NET + React</div>
+      <div className='title3'>.NET + React 💻</div>
     </div> 
  
      
