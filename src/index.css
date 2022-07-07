@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    text-shadow: 4px 4px 3px black;
     background-color: rgb(31, 31, 31);
     color: rgb(255, 255, 255);
     /* background-image: url(/src/img/imgonline-com-ua-Blur-dptonyNhWcdyjdn2\ \(1\).jpg); 
@@ -10,6 +11,22 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;*/
+}
+
+.btn {
+    text-shadow: 0px 0px 0px !important;
+}
+
+.contact {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.image {
+    margin-top: 30px;
+    margin-right: 30px;
 }
 
 .cards {
@@ -61,15 +78,36 @@ code {
     .mdiv {
         margin-top: 30%;
     }
+    .contact {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-self: center;
+    }
+    .image {
+        margin-top: 0px;
+        margin-bottom: 20px;
+        margin-right: 0px;
+    }
 }
 
 @media only screen and (max-device-width: 600px) {
-    .mdiv {
+    /* .mdiv {
         margin-top: 35%;
+    } */
+    .mdiv {
+        margin-top: 30%;
     }
-    body {
-        background-position-x: left;
-        background-position-y: center;
+    .contact {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-self: center;
+    }
+    .image {
+        margin-top: 0px;
+        margin-bottom: 20px;
+        margin-right: 0px;
     }
 }
 

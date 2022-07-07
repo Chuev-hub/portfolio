@@ -1,27 +1,40 @@
 import React from "react";
+import ImageGallery from "react-image-gallery";
 import { ReactPhotoCollage } from "react-photo-collage";
-
+import Gallery from "react-photo-gallery";
+import PhotoAlbum from "react-photo-album";
+import { LightBox} from 'react-lightbox-pack';
 function Project(props) {
   var d = require("../data.json").mas.find(
     (x) => x.id == props.match.params.id
   );
 
-  const setting = {
-    width: "450px",
-    height: d.url.length > 2 ? ["250px", "120px"] : ["250px"],
-    layout: d.url.length > 2 ? [1, 3] : [2],
-    photos: d.url.map((x) => {
-      return { source: require("../Screenshots/" + x) };
-    }),
-    showNumOfRemainingPhotos: true,
-  };
-  console.log(setting);
+  // const setting = {
+  //   width: "450px",
+  //   height: d.url.length > 2 ? ["250px", "120px"] : ["250px"],
+  //   layout: d.url.length > 2 ? [1, 3] : [2],
+  //   photos: d.url.map((x) => {
+  //     return { source: require("../Screenshots/" + x) };
+  //   }),
+  //   showNumOfRemainingPhotos: true,
+  // };import ImageGallery from 'react-image-gallery';
+
+
+  // const photos = d.url.map((x) => {
+  //        return { src: require("../Screenshots/" + x),width:500,height:500 };
+  //      })
+    
+  
+
+  
+  // console.log(setting);
   return (
     <div
       className="d-flex justify-content-center align-items-start elementP"
       style={{ marginTop: "50px" }}
     >
-      <ReactPhotoCollage {...setting} style="border:red" />
+  
+      {/* <ReactPhotoCollage {...setting} style="border:red" /> */}
       <div
         className="d-flex justify-content-center flex-column"
         style={{ width: "400px",zIndex:"2" ,marginLeft: "30px" }}
@@ -29,7 +42,7 @@ function Project(props) {
         <div style={{ fontSize: "30px" }}>{d.title}</div>
         <div style={{ fontSize: "15px" }}>{d.date}</div>
         <br />
-        <div style={{ fontSize: "20px" }}>{"Stack: " + d.technology}</div>
+        <div style={{ fontSize: "20px" }}>{"Stack: " + d.stack}</div>
         <div>{d.longMessage}</div>
         <div
           className="d-flex align-items-center"
