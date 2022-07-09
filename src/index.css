@@ -95,9 +95,9 @@ code {
 }
 
 @media only screen and (max-device-width: 600px) {
-    /* .mdiv {
-        margin-top: 35%;
-    } */
+    .imagephone {
+        margin: 20px;
+    }
     .mdiv {
         margin-top: 30%;
     }
