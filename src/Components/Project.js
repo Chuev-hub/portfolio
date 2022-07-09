@@ -53,8 +53,8 @@ function Project(props) {
             marginBottom: "20px",
             width: "400px",
             alignSelf: "start",
-            zIndex: "2",
             marginLeft: "30px",
+            marginRight:"20px"
           }}
         >
           <div style={{ fontSize: "30px" }}>{photos.title}</div>
