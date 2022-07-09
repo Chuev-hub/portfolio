@@ -1,61 +1,70 @@
-import React from "react";
-import ImageGallery from "react-image-gallery";
-import { ReactPhotoCollage } from "react-photo-collage";
+import React, { useState, useCallback } from "react";
+import { render } from "react-dom";
 import Gallery from "react-photo-gallery";
-import PhotoAlbum from "react-photo-album";
-import { LightBox} from 'react-lightbox-pack';
+import Carousel, { Modal, ModalGateway } from "react-images";
+
 function Project(props) {
-  var d = require("../data.json").mas.find(
+  var photos = require("../data.json").mas.find(
     (x) => x.id == props.match.params.id
   );
+  var photosArr= photos.url.map((x) => {
+    return { src: require("../Screenshots/" + x.src),width:x.width,height:x.height };
+  });
+  const [currentImage, setCurrentImage] = useState(0);
+  const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
-  // const setting = {
-  //   width: "450px",
-  //   height: d.url.length > 2 ? ["250px", "120px"] : ["250px"],
-  //   layout: d.url.length > 2 ? [1, 3] : [2],
-  //   photos: d.url.map((x) => {
-  //     return { source: require("../Screenshots/" + x) };
-  //   }),
-  //   showNumOfRemainingPhotos: true,
-  // };import ImageGallery from 'react-image-gallery';
+  const openLightbox = useCallback((event, { photo, index }) => {
+    setCurrentImage(index);
+    setViewerIsOpen(true);
+  }, []);
 
-
-  // const photos = d.url.map((x) => {
-  //        return { src: require("../Screenshots/" + x),width:500,height:500 };
-  //      })
-    
-  
-
-  
-  // console.log(setting);
+  const closeLightbox = () => {
+    setCurrentImage(0);
+    setViewerIsOpen(false);
+  };
   return (
+    <>
+   
+    
     <div
       className="d-flex justify-content-center align-items-start elementP"
-      style={{ marginTop: "50px" }}
+      style={{ marginTop: "50px" ,marginBottom:"100px",flexWrap: "wrap-reverse"}}
     >
-  
-      {/* <ReactPhotoCollage {...setting} style="border:red" /> */}
+ <div  style={{width:"400px", zIndex:"2"}}>
+ <Gallery onClick={openLightbox}    photos={photosArr}  />
+
+    <ModalGateway>
+        {viewerIsOpen ? (
+          <Modal onClose={closeLightbox}>
+            <Carousel
+              currentIndex={currentImage}
+              views={photosArr}
+            />
+          </Modal>
+        ) : null}
+      </ModalGateway>
+    </div>
       <div
         className="d-flex justify-content-center flex-column"
-        style={{ width: "400px",zIndex:"2" ,marginLeft: "30px" }}
+        style={{marginBottom:"20px", width: "400px",alignSelf:"start", zIndex:"2" ,marginLeft: "30px" }}
       >
-        <div style={{ fontSize: "30px" }}>{d.title}</div>
-        <div style={{ fontSize: "15px" }}>{d.date}</div>
+        <div style={{ fontSize: "30px" }}>{photos.title}</div>
+        <div style={{ fontSize: "15px" }}>{photos.date}</div>
         <br />
-        <div style={{ fontSize: "20px" }}>{"Stack: " + d.stack}</div>
-        <div>{d.longMessage}</div>
+        <div style={{ fontSize: "20px" }}>{"Stack: " + photos.stack}</div>
+        <div>{photos.longMessage}</div>
         <div
           className="d-flex align-items-center"
           style={{ marginTop: "20px" }}
         >
-          <a href={d.source} target="_blank">
+          <a href={photos.source} target="_blank">
             <img width="50px" src={require("../img/icons8-github-120.png")} />
           </a>
-          {d.publishLink.length > 0 && (
+          {photos.publishLink.length > 0 && (
             <a
               target="_blank"
               style={{ marginLeft: "10px", marginTop: "2px" }}
-              href={d.publishLink}
+              href={photos.publishLink}
             >
               <img
                 width="40px"
@@ -66,38 +75,8 @@ function Project(props) {
         </div>
       </div>
     </div>
-    //     <div className="d-flex justify-content-center" style={{marginTop:"50px"}}>
-
-    //     <div style={{width:"500px"}}>
-
-    // <div id="carouselExampleIndicators" className={d.darkTheme ? "carousel carousel-dark slide":"carousel slide"}  data-bs-ride="true" style={{borderRadius: "10px",boxShadow:"0 0 100px rgba(0,0,0,.8), inset 0 0 50px rgba(0,0,0,1)", position: "relative",}}>
-    //   <div className="carousel-indicators">
-    //   {d.url.map(x =>
-    //             (
-    //     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={d.url.findIndex(c=>c==x)}  className={x == d.url[0] ? "active":""} aria-current={x == d.url[0] ? "true":"false"} aria-label={"Slide "+(d.url.findIndex(c=>c==x)+1)}></button>
-    //              )
-    //       )}
-
-    //   </div>
-    //   <div className="carousel-inner ">
-
-    //     {d.url.map(x =>
-    //             (  <div className={x == d.url[0] ? "carousel-item active":"carousel-item "}>
-    //         <img src={require("../Screenshots/"+x)}  className="d-block   w-100"   />
-    //       </div> )
-    //       )}
-
-    //   </div>
-    //   <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    //     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-    //     <span className="visually-hidden">Previous</span>
-    //   </button>
-    //   <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    //     <span className="carousel-control-next-icon" aria-hidden="true"></span>
-    //     <span className="visually-hidden">Next</span>
-    //   </button>
-    // </div>
-    //         </div></div>
+   
+    </>
   );
 }
 export default Project;
